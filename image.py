@@ -1,5 +1,7 @@
 from openai import OpenAI
 
+Client = OpenAI()
+
 url = "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"
 response = Client.chat.completions.create(
     model="gpt-4o",
